@@ -3,6 +3,7 @@
 @import "header.css";
 @import "nav-bar.css";
 @import "friend.css";
+@import "friends.css";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap");
 
 body {
@@ -16,6 +17,8 @@ body {
 a {
   /* 부모로부터 컬러를 받아옴 */
   color: inherit;
+  /* 밑줄 삭제 */
+  text-decoration: none;
 }
 
 li {
@@ -23,5 +26,6 @@ li {
 }
 
 * {
+  /* padding을 넣어도 box사이즈 유지 */
   box-sizing: border-box;
 }
