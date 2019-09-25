@@ -6,7 +6,8 @@
 @import "friends.css";
 @import "find.css";
 @import "more.css";
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap");
+@import "setting.css";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300:400,600&display=swap");
 
 body {
   background-color: white;
