@@ -1,4 +1,5 @@
 .chats-body {
+  /* 배경화면을 적용하기 위해 패딩 초기화*/
   padding: 0;
 }
 
@@ -7,7 +8,7 @@
   padding: 0px 20px;
 }
 
-.chat {
+.chat-screen {
   background-image: url("../images/chatting.png");
   min-height: 100vh;
 }
@@ -45,4 +46,56 @@
 
 .chat__write-column input:focus {
   outline: none;
+}
+
+.chat-screen .chat__messages {
+  border-top: 1px solid #f7f7f7;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 20px;
+  padding-top: 30px;
+}
+
+.chat__messages .chat__timestamp {
+  background-color: white;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 8px 16px -8px,
+    rgba(0, 0, 0, 0.3) 0 -6px 16px -6px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.message .message__content {
+  width: 90%;
+}
+.incomming-message {
+  align-self: flex-start;
+}
+.incomming-message img {
+  width: 50px;
+  border-radius: 30px;
+  margin-right: 20px;
+}
+
+.sent-message {
+  align-self: flex-end;
+}
+
+.message .mesaage__bubble {
+  background-color: white;
+  border-radius: 30px;
+  padding: 10px 20px;
+  box-shadow: rgba(204, 160, 160, 0.3) 0 8px 16px -8px,
+    rgba(0, 0, 0, 0.3) 0 -6px 16px -6px;
 }
